@@ -1,0 +1,18 @@
+indicators:
+
+'1.1_TOTAL.FINAL.ENERGY.CONSUM':'Total Energy Consumption'
+	-appears to be available for most countries
+	
+'1.1_ACCESS.ELECTRICITY.TOT':'Access to Electricity'
+	not available for some south asian countries
+	
+Gini Coeff no good
+
+4.1.1_TOTAL.ELECTRICITY.OUTPUT
+	good for south asia
+	
+'NY.GDP.MKTP.CD':'GDP in current $US'
+	available for south asia
+	
+
+
