@@ -9,7 +9,7 @@ GWU Programming for Analytics Individual Project
 
 import wbdata
 import pandas
-import matplotlib.pyplot as plt
+import datetime
 
 saveDir = "./data"
 createCSVs = True
@@ -37,9 +37,14 @@ indicators = {'4.1.1_TOTAL.ELECTRICITY.OUTPUT':elecIndName,
               '1.1_TOTAL.FINAL.ENERGY.CONSUM':energyIndName,
               'NY.GDP.MKTP.CD':gdpIndName,
               'SP.POP.TOTL':popIndName}
+              
+# Define time period where all data is available
+startTime = datetime.datetime(year=1990,month=1,day=1)
+endTime = datetime.datetime(year=2009,month=12,day=31)
 
 #grab indicators above for countires above and load into data frame
-df = wbdata.get_dataframe(indicators, country=countries, convert_date=False)
+df = wbdata.get_dataframe(indicators, country=countries, convert_date=False,
+                          data_date=(startTime,endTime))
 
 #debugging:
 #print "\ndf.head():\n", df.head()
