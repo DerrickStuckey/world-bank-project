@@ -66,7 +66,7 @@ dfuPop = dfu[popIndName]
 
 # if flagged, create a set of CSV files, one for each indicator
 if (createCSVs):
-    saveToCsv(dfu, "South_Asian_Stats")
+    saveToCsv(df, "South_Asian_Stats")
     saveToCsv(dfuElec, "South_Asian_ELectricity_Production")
     saveToCsv(dfuEnergy, "South_Asian_Energy_Usage")
     saveToCsv(dfuGDP, "South_Asian_GDP")
