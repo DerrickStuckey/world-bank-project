@@ -2,6 +2,7 @@ indicators:
 
 '1.1_TOTAL.FINAL.ENERGY.CONSUM':'Total Energy Consumption'
 	-appears to be available for most countries
+	available for south asia 1990-2010
 	
 '1.1_ACCESS.ELECTRICITY.TOT':'Access to Electricity'
 	not available for some south asian countries
@@ -9,10 +10,15 @@ indicators:
 Gini Coeff no good
 
 4.1.1_TOTAL.ELECTRICITY.OUTPUT
-	good for south asia
+	good for south asia 1990-2010
 	
 'NY.GDP.MKTP.CD':'GDP in current $US'
-	available for south asia
+	available for south asia 1960-2013
 	
+'SP.POP.TOTL': 'Total Population'
+	available for south asia 1960-2013
+	
+'SP.URB.TOTL.IN.ZS':'% Urban Pop'
+	available for south asia 1960-2013
 
-
+all data available for 1990-2009 except GDP for Afghanistan
