@@ -12,7 +12,7 @@ import pandas
 import datetime
 
 saveDir = "./data"
-createCSVs = True
+createCSVs = False
 
 # Read DF from CSV
 def readFromCSV(dfName):
@@ -35,8 +35,7 @@ popIndName = 'Total Population'
 
 indicators = {'4.1.1_TOTAL.ELECTRICITY.OUTPUT':elecIndName,
               '1.1_TOTAL.FINAL.ENERGY.CONSUM':energyIndName,
-              'NY.GDP.MKTP.CD':gdpIndName,
-              'SP.POP.TOTL':popIndName}
+              'NY.GDP.MKTP.CD':gdpIndName}
               
 # Define time period where all data is available
 startTime = datetime.datetime(year=1990,month=1,day=1)
@@ -61,13 +60,9 @@ dfuEnergy = dfu[energyIndName]
 #dataframe of just GDP values
 dfuGDP = dfu[gdpIndName]
 
-#dataframe of just Population values
-dfuPop = dfu[popIndName]
-
 # if flagged, create a set of CSV files, one for each indicator
 if (createCSVs):
     saveToCsv(df, "South_Asian_Stats")
     saveToCsv(dfuElec, "South_Asian_ELectricity_Production")
     saveToCsv(dfuEnergy, "South_Asian_Energy_Usage")
     saveToCsv(dfuGDP, "South_Asian_GDP")
-    saveToCsv(dfuPop, "South_Asian_Population")
